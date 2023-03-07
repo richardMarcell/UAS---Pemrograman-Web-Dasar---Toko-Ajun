@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+}
+
+.kiri {
+  width: 50%;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.animasi1 {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  transition: 0.2s linear;
+}
+
+
+.logo {
+  width: 100%;
+  padding: 15px;
+}
+
+.logo img {
+  width: 375px;
+  height: 60px;
+}
+
+.opening {
+  margin-top: 100px;
+  padding-left: 30px;
+}
+
+.opening h3 {
+  font-weight: 500;
+}
+
+.formSignUp {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+input {
+  margin-bottom: 25px;
+  width: 530px;
+  height: 75px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.button {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button #login2 {
+  width: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid #21bf73;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s linear;
+  background-color: white;
+}
+
+.button #login2:hover {
+  background-color: #21bf73;
+}
+
+.button #login1 {
+  width: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #21bf73;
+  border: 2px solid #21bf73;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s linear;
+}
+
+.button #login1:hover {
+  background-color: #fba643;
+  border-color: #fba643;
+  cursor: pointer;
+}
+
+/* responsif */
+@media (max-width: 1150px) {
+  .animasi1 {
+    display: none;
+  }
+
+  .kiri {
+    width: 100%;
+    right: 0;
+  }
+
+  .logo {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opening {
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .opening h1 {
+    width: 100%;
+  }
+
+  .opening h3 {
+    width: 100%;
+  }
+
+  .formSignUp {
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .opening h1 {
+    font-size: 25px;
+  }
+
+  .opening h3 {
+    font-size: 20px;
+  }
+
+  .formSignUp input {
+    width: 500px;
+    height: 60px;
+  }
+
+  .button {
+    flex-wrap: wrap;
+  }
+
+  .button #login2 {
+    width: 500px;
+  }
+
+  .button #login1 {
+    width: 500px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .formSignUp input {
+    width: 400px;
+  }
+
+  .formSignUp form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .formSignUp label {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button {
+    justify-content: center;
+  }
+
+  .button #login2 {
+    width: 400px;
+  }
+
+  .button #login1 {
+    width: 400px;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .opening h1 {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+  .opening {
+    margin-top: 40px;
+  }
+
+  .opening h3 {
+    font-size: 15px;
+  }
+
+  .formSignUp input {
+    height: 50px;
+    width: 350px;
+  }
+
+  .button #login2 {
+    width: 350px;
+    height: 50px;
+  }
+
+  .button #login1 {
+    width: 350px;
+    height: 50px;
+  }
+
+  .formSignUp {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 370px) {
+  .formSignUp {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .formSignUp input {
+    width: 300px;
+  }
+
+  .button #login2 {
+    width: 300px;
+    height: 50px;
+  }
+
+  .button #login1 {
+    width: 300px;
+    height: 50px;
+  }
+}
