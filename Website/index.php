@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 // Inisialisasi Database
 $db = mysqli_connect("localhost", "root", "", "tokoajun");
@@ -17,9 +16,9 @@ if(isset($_POST["login"])) {
     
     if($dataUserLogin["username"] == $username) {
         if(password_verify($_POST["password"], $dataUserLogin["password"])) {
+            setcookie('username', $username, time() + 3600);
+            setcookie('id_user', $id_user, time() + 3600);
             $_SESSION["login"] = true;
-            setcookie('username', $username);
-            setcookie('id_user', $id_user);
             if($dataUserLogin["role"] == "admin") {
                 header('Location: adminHomepage.php');
                 exit;
