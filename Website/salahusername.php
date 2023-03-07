@@ -34,6 +34,7 @@
             height: 250px;
             padding: 10px;
             margin: 200px auto;
+            animation: animasi 0.2s linear forwards;
         }
 
         .popUpGagal .gagal h1 {
@@ -66,6 +67,16 @@
             background-color: #fba643;
             cursor: pointer;
             margin-top: 50px;
+        }
+
+        @keyframes animasi {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         @media (max-width: 520px) {
