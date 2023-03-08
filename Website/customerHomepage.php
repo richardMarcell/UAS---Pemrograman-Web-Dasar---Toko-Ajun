@@ -16,6 +16,16 @@ session_start();
     <title>Toko Ajun | Customer HomePage</title>
 
     <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+}
         
 .kanan {
     width: 85%;
@@ -69,7 +79,7 @@ session_start();
                     <input type="text" name="search" id="search" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <h1>Hello, <?= $_POST["username"]?></h1>
+                <h1>Hello, <?= $_COOKIE["username"]?></h1>
             </div>
     </div>
 </body>

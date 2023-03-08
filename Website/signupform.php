@@ -16,7 +16,7 @@
 
 
         // Mengecek apakah sudah ada username dan email sudah terdaftar atau belum
-        $usernameAndEmail = mysqli_query($db, "SELECT username, email FROM user WHERE username = '$nameUser'");
+        $usernameAndEmail = mysqli_query($db, "SELECT username, email FROM user WHERE username = '$nameUser' OR email = '$emailUser'");
         
         //Mengecek apakah username atau email sudah ada di dalam database 
         if(mysqli_fetch_assoc($usernameAndEmail)) {

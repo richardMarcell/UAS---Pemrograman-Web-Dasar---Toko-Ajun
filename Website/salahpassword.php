@@ -24,7 +24,7 @@
             left: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 75%);
-            transition: 1s linear;
+            transition: 0.2s linear;
         }
 
         .popUpGagal .gagal {
